@@ -11,10 +11,10 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
         <nav>
             <ul>
-                <li><a href="#section-one">Lorem Section 1</a></li>
-                <li><a href="#section-two">Lorem Section 2</a></li>
-                <li><a href="#section-three">Lorem Section 3</a></li>
-                <li><a href="#section-four">Lorem Section 4</a></li>
+                <li><a href="#section-one">Списки</a></li>
+                <li><a href="#section-two">Таблиця</a></li>
+                <li><a href="#section-three">Форма</a></li>
+                <li><a href="#section-four">Відео та аудіо</a></li>
             </ul>
         </nav>
     </header>
@@ -36,9 +36,159 @@
         </section>
         <section id="section-two">
             <h2> Table </h2>
+            <section id="lists">
+    
+    <h3>Склад бригади (Нумерований список):</h3>
+    <ol>
+        <li>Британ Костянтин</li>
+        <li>Гулішевський Олексій</li>
+        <li>Фабинюк Максим</li>
+    </ol>
+
+    <h3>Наші навички та інструменти (Маркований список):</h3>
+    <ul>
+        <li>Основи мови HTML5</li>
+        <li>Командна робота в Git</li>
+        <li>
+            Використовувані інструменти:
+            <ul>
+                <li>GitHub</li>
+                <li>Visual Studio Code</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+<section id="schedule">
+    <h2>Розклад занять та режим дня</h2>
+    
+    <table border="1">
+        <caption>Наш навчальний розклад</caption>
+        <thead>
+            <tr>
+                <th>Пара / День</th>
+                <th>Понеділок</th>
+                <th>Вівторок</th>
+                <th>Середа</th>
+                <th>Четвер</th>
+                <th>П'ятниця</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Пара 1</th>
+                <td></td>
+                <td>Історія та культура України</td>
+                <td>Основи національного спротиву</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Пара 2</th>
+                <td>Веб-технології</td>
+                <td>Вища математика</td>
+                <td>Основи національного спротиву</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Пара 3</th>
+                <td>Веб-технології</td>
+                <td>Вища математика</td>
+                <td>Основи національного спротиву</td>
+                <td></td>
+                <td>Англіська мова</td>
+            </tr>
+            <tr>
+                <th>Пара 4</th>
+                <td>КТП</td>
+                <td>Вища математика</td>
+                <td>Основи національного спротиву</td>
+                <td></td>
+                <td>Англіська мова</td>
+            </tr>
+            <tr>
+                <th>Пара 5</th>
+                <td>КТП</td>
+                <td>Вища математика</td>
+                <td>Основи автоматизації</td>
+                <td>Комп'ютерна графіка</td>
+                <td>КТП</td>
+            </tr>
+            <tr>
+                <th>Пара 6</th>
+                <td>Вища математика</td>
+                <td>Основи автоматизації</td>
+                <td>Основи автоматизації</td>
+                <td>Комп'ютерна графіка</td>
+                <td>КТП</td>
+            </tr>
+            <tr>
+                <th>Пара 7</th>
+                <td></td>
+                <td>Основи автоматизації</td>
+                <td>Веб-технології</td>
+                <td>Комп'ютерна графіка</td>
+                <td>Фізична культура</td>
+            </tr>
+            <tr>
+                <th>Пара 8</th>
+                <td></td>
+                <td></td>
+                <td>Веб-технології</td>
+                <td></td>
+                <td>Фізична культура</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</section>
         </section>
         <section id="section-three">
             <h2> Form Registration</h2>
+            	<article>
+            <h2>ЗАПОВНІТЬ ФОРМУ</h2>
+
+            <form action="#" method="POST">
+                <label for="username">Ваше ім'я:</label><br>
+                <input type="text" id="username" name="username" placeholder="Уведіть ім'я..."><br><br>
+
+                <label for="email">Уведіть вашу електронну адресу:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email..."><br><br>
+
+                <label for="password">Пароль:</label><br>
+                <input type="password" id="password" name="password" placeholder="Уведіть пароль..."><br><br>
+
+                <label for="date">Уведіть вашу дату народження:</label><br>
+                <input type="date" id="date" name="date"><br><br>
+
+                <label for="number">Уведіть число:</label><br>
+                <input type="number" id="number" name="number" placeholder="Уведіть число..."><br><br>
+
+                <label for="checkbox">Оберіть варіант:</label><br>
+                <select id="checkbox" name="checkbox">
+                    <option value="1">Перший варіант</option>
+                    <option value="2">Другий варіант</option>
+                </select><br><br>
+
+                <label for="radio">Оберіть ЛИШЕ варіант:</label><br>
+                <select id="radio" name="radio">
+                    <option value="1">Третій варіант</option>
+                    <option value="2">Четвертий варіант</option>
+                </select><br><br>
+
+                <label for="skills">Вибери навички:</label><br>
+                <select id="skills" name="skills" multiple size="3">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select><br><br>
+
+                <label for="textarea">Повідомлення:</label><br>    
+                <textarea id="textarea" name="textarea" placeholder="Впишіть текст..."></textarea><br><br>
+
+                <button type="submit">ВІДПРАВИТИ</button>
+            </form>
+        </article>
         </section>
         <section id="section-four">
             <h2> Multimedia Section</h2>   
